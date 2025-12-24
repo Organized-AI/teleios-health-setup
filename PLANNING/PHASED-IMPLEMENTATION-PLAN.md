@@ -208,8 +208,15 @@ Complete documentation and prepare for ongoing management.
 | Google Ads Account | `6890103064` |
 | Google Ads Conversion ID | `17810172296` |
 | Web GTM | `GTM-WM5S3WSG` (Account: 6328225355, Container: 237555513) |
-| Server GTM | `GTM-MLBJCV38` |
+| Server GTM | `GTM-MLBJCV38` (Account: 6328225355, Container: 237556533) |
 | Stape Container | `nsawsbpg` (US West Oregon) |
+
+## GTM Container URLs
+
+| Container | URL |
+|-----------|-----|
+| Web GTM (GTM-WM5S3WSG) | https://tagmanager.google.com/#/container/accounts/6328225355/containers/237555513/workspaces/3 |
+| Server GTM (GTM-MLBJCV38) | https://tagmanager.google.com/#/container/accounts/6328225355/containers/237556533/workspaces/3 |
 
 ---
 

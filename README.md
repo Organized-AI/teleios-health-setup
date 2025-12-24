@@ -80,6 +80,13 @@ teleios-health-setup/
 | Web GTM | `GTM-WM5S3WSG` |
 | Server GTM | `GTM-MLBJCV38` |
 
+## GTM Container URLs
+
+| Container | URL |
+|-----------|-----|
+| Web GTM | https://tagmanager.google.com/#/container/accounts/6328225355/containers/237555513/workspaces/3 |
+| Server GTM | https://tagmanager.google.com/#/container/accounts/6328225355/containers/237556533/workspaces/3 |
+
 ## Current Implementation Status
 
 - ✅ Web GTM container configured (21 tags, 14 triggers, 18 variables)

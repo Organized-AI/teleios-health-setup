@@ -22,6 +22,8 @@ Set up Stape server container with CAPIG for Meta Conversions API and GA4 Measur
 | GA4 Property | `180456352` |
 | GA4 Measurement ID | `G-CS05KZX2HG` |
 
+**GTM Container URL:** https://tagmanager.google.com/#/container/accounts/6328225355/containers/237556533/workspaces/3
+
 ---
 
 ## Tasks
