@@ -1,0 +1,695 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2024-12-24T00:00:00.000Z",
+  "containerVersion": {
+    "path": "accounts/6328225355/containers/237555513/versions/0",
+    "accountId": "6328225355",
+    "containerId": "237555513",
+    "name": "Teleios Health Lead Tracking v1",
+    "description": "Web container with Meta Pixel, GA4, and Google Ads tracking",
+    "container": {
+      "path": "accounts/6328225355/containers/237555513",
+      "accountId": "6328225355",
+      "containerId": "237555513",
+      "name": "Teleios Health - Web",
+      "publicId": "GTM-WM5S3WSG",
+      "usageContext": ["WEB"]
+    },
+    "variable": [
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "variableId": "1",
+        "name": "GA4 Measurement ID",
+        "type": "c",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "G-CS05KZX2HG"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "variableId": "2",
+        "name": "Meta Pixel ID",
+        "type": "c",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "912613798381607"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "variableId": "3",
+        "name": "Google Ads Conversion ID",
+        "type": "c",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "17810172296"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "variableId": "4",
+        "name": "DL - event_id",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "event_id"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "variableId": "5",
+        "name": "DL - user_data.email",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "user_data.email"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "variableId": "6",
+        "name": "DL - user_data.phone",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "user_data.phone"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "variableId": "7",
+        "name": "DL - user_data.first_name",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "user_data.first_name"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "variableId": "8",
+        "name": "DL - user_data.last_name",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "user_data.last_name"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "variableId": "9",
+        "name": "DL - form_id",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "form_id"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "variableId": "10",
+        "name": "Cookie - _fbp",
+        "type": "k",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "_fbp"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "variableId": "11",
+        "name": "Cookie - _fbc",
+        "type": "k",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "_fbc"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "variableId": "12",
+        "name": "Page - Content Name",
+        "type": "smm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "input",
+            "value": "{{Page Path}}"
+          },
+          {
+            "type": "LIST",
+            "key": "map",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {"type": "TEMPLATE", "key": "key", "value": "/exosome"},
+                  {"type": "TEMPLATE", "key": "value", "value": "Exosome Therapy"}
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {"type": "TEMPLATE", "key": "key", "value": "/gene"},
+                  {"type": "TEMPLATE", "key": "value", "value": "Gene Therapy"}
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {"type": "TEMPLATE", "key": "key", "value": "/clinic"},
+                  {"type": "TEMPLATE", "key": "value", "value": "Teleios Clinic"}
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "defaultValue",
+            "value": "{{Page Title}}"
+          }
+        ]
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "triggerId": "1",
+        "name": "All Pages",
+        "type": "PAGEVIEW"
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "triggerId": "2",
+        "name": "form_submit",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{_event}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "form_submit"}
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "triggerId": "3",
+        "name": "Therapy Pages",
+        "type": "PAGEVIEW",
+        "filter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Page Path}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": ".*(exosome|gene|clinic|therapy).*"}
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "triggerId": "4",
+        "name": "Scroll - 50%",
+        "type": "SCROLL_DEPTH",
+        "parameter": [
+          {"type": "BOOLEAN", "key": "verticalThresholdsOn", "value": "true"},
+          {"type": "TEMPLATE", "key": "verticalThresholdUnits", "value": "PERCENT"},
+          {"type": "TEMPLATE", "key": "verticalThresholdsPercent", "value": "50"}
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "triggerId": "5",
+        "name": "Scroll - 75%",
+        "type": "SCROLL_DEPTH",
+        "parameter": [
+          {"type": "BOOLEAN", "key": "verticalThresholdsOn", "value": "true"},
+          {"type": "TEMPLATE", "key": "verticalThresholdUnits", "value": "PERCENT"},
+          {"type": "TEMPLATE", "key": "verticalThresholdsPercent", "value": "75"}
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "triggerId": "6",
+        "name": "Video - Start",
+        "type": "YOU_TUBE_VIDEO",
+        "parameter": [
+          {"type": "BOOLEAN", "key": "captureStart", "value": "true"},
+          {"type": "BOOLEAN", "key": "fixMissingApi", "value": "true"}
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "triggerId": "7",
+        "name": "Video - 50% Progress",
+        "type": "YOU_TUBE_VIDEO",
+        "parameter": [
+          {"type": "BOOLEAN", "key": "captureProgress", "value": "true"},
+          {"type": "TEMPLATE", "key": "progressThresholdsPercent", "value": "50"},
+          {"type": "BOOLEAN", "key": "fixMissingApi", "value": "true"}
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "triggerId": "8",
+        "name": "Video - Complete",
+        "type": "YOU_TUBE_VIDEO",
+        "parameter": [
+          {"type": "BOOLEAN", "key": "captureComplete", "value": "true"},
+          {"type": "BOOLEAN", "key": "fixMissingApi", "value": "true"}
+        ]
+      }
+    ],
+    "tag": [
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "1",
+        "name": "GA4 - Configuration",
+        "type": "gaawc",
+        "parameter": [
+          {"type": "BOOLEAN", "key": "sendPageView", "value": "true"},
+          {"type": "BOOLEAN", "key": "enableSendToServerContainer", "value": "true"},
+          {"type": "TEMPLATE", "key": "measurementId", "value": "{{GA4 Measurement ID}}"},
+          {"type": "TEMPLATE", "key": "serverContainerUrl", "value": "https://nsawsbpg.stape.io"}
+        ],
+        "firingTriggerId": ["1"]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "2",
+        "name": "GA4 - Event - generate_lead",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "generate_lead"},
+          {"type": "TAG_REFERENCE", "key": "measurementId", "value": "GA4 - Configuration"},
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {"type": "TEMPLATE", "key": "name", "value": "form_id"},
+                  {"type": "TEMPLATE", "key": "value", "value": "{{DL - form_id}}"}
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {"type": "TEMPLATE", "key": "name", "value": "event_id"},
+                  {"type": "TEMPLATE", "key": "value", "value": "{{DL - event_id}}"}
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": ["2"]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "3",
+        "name": "GA4 - Event - view_item",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "view_item"},
+          {"type": "TAG_REFERENCE", "key": "measurementId", "value": "GA4 - Configuration"},
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {"type": "TEMPLATE", "key": "name", "value": "item_name"},
+                  {"type": "TEMPLATE", "key": "value", "value": "{{Page - Content Name}}"}
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": ["3"]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "4",
+        "name": "GA4 - Event - scroll",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "scroll"},
+          {"type": "TAG_REFERENCE", "key": "measurementId", "value": "GA4 - Configuration"},
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {"type": "TEMPLATE", "key": "name", "value": "percent_scrolled"},
+                  {"type": "TEMPLATE", "key": "value", "value": "{{Scroll Depth Threshold}}"}
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": ["4", "5"]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "5",
+        "name": "GA4 - Event - video_start",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "video_start"},
+          {"type": "TAG_REFERENCE", "key": "measurementId", "value": "GA4 - Configuration"},
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {"type": "TEMPLATE", "key": "name", "value": "video_title"},
+                  {"type": "TEMPLATE", "key": "value", "value": "{{Video Title}}"}
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": ["6"]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "6",
+        "name": "GA4 - Event - video_complete",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "video_complete"},
+          {"type": "TAG_REFERENCE", "key": "measurementId", "value": "GA4 - Configuration"},
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {"type": "TEMPLATE", "key": "name", "value": "video_title"},
+                  {"type": "TEMPLATE", "key": "value", "value": "{{Video Title}}"}
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": ["8"]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "7",
+        "name": "Meta Pixel - Base Code",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n!function(f,b,e,v,n,t,s)\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\nn.queue=[];t=b.createElement(e);t.async=!0;\nt.src=v;s=b.getElementsByTagName(e)[0];\ns.parentNode.insertBefore(t,s)}(window, document,'script',\n'https://connect.facebook.net/en_US/fbevents.js');\nfbq('init', '{{Meta Pixel ID}}');\n</script>"
+          },
+          {"type": "BOOLEAN", "key": "supportDocumentWrite", "value": "false"}
+        ],
+        "firingTriggerId": ["1"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "priority": 100
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "8",
+        "name": "Meta Pixel - PageView",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\nfbq('track', 'PageView', {}, {\n  eventID: '{{DL - event_id}}'\n});\n</script>"
+          },
+          {"type": "BOOLEAN", "key": "supportDocumentWrite", "value": "false"}
+        ],
+        "firingTriggerId": ["1"],
+        "setupTag": [{"tagName": "Meta Pixel - Base Code"}]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "9",
+        "name": "Meta Pixel - Lead",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\nfbq('track', 'Lead', {\n  content_name: '{{DL - form_id}}'\n}, {\n  eventID: '{{DL - event_id}}'\n});\n</script>"
+          },
+          {"type": "BOOLEAN", "key": "supportDocumentWrite", "value": "false"}
+        ],
+        "firingTriggerId": ["2"],
+        "setupTag": [{"tagName": "Meta Pixel - Base Code"}]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "10",
+        "name": "Meta Pixel - ViewContent",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\nfbq('track', 'ViewContent', {\n  content_name: '{{Page - Content Name}}',\n  content_category: 'therapy'\n}, {\n  eventID: '{{DL - event_id}}'\n});\n</script>"
+          },
+          {"type": "BOOLEAN", "key": "supportDocumentWrite", "value": "false"}
+        ],
+        "firingTriggerId": ["3"],
+        "setupTag": [{"tagName": "Meta Pixel - Base Code"}]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "11",
+        "name": "Google Ads - Remarketing",
+        "type": "awct",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "conversionId", "value": "{{Google Ads Conversion ID}}"},
+          {"type": "BOOLEAN", "key": "enableConversionLinker", "value": "true"}
+        ],
+        "firingTriggerId": ["1"]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "12",
+        "name": "Google Ads - Lead Conversion",
+        "type": "awct",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "conversionId", "value": "{{Google Ads Conversion ID}}"},
+          {"type": "TEMPLATE", "key": "conversionLabel", "value": "GKswCL2sndYbEIjTxqxC"},
+          {"type": "BOOLEAN", "key": "enableConversionLinker", "value": "true"},
+          {"type": "BOOLEAN", "key": "enableEnhancedConversions", "value": "true"},
+          {
+            "type": "LIST",
+            "key": "enhancedConversionsUserData",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {"type": "TEMPLATE", "key": "name", "value": "email"},
+                  {"type": "TEMPLATE", "key": "value", "value": "{{DL - user_data.email}}"}
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {"type": "TEMPLATE", "key": "name", "value": "phone_number"},
+                  {"type": "TEMPLATE", "key": "value", "value": "{{DL - user_data.phone}}"}
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": ["2"]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "13",
+        "name": "Google Ads - Deposit Conversion",
+        "type": "awct",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "conversionId", "value": "{{Google Ads Conversion ID}}"},
+          {"type": "TEMPLATE", "key": "conversionLabel", "value": "C7qLCMCsndYbEIjTxqxC"},
+          {"type": "BOOLEAN", "key": "enableConversionLinker", "value": "true"}
+        ],
+        "firingTriggerId": ["2"]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "14",
+        "name": "Google Ads - Treatment Conversion",
+        "type": "awct",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "conversionId", "value": "{{Google Ads Conversion ID}}"},
+          {"type": "TEMPLATE", "key": "conversionLabel", "value": "6j8qCMOsndYbEIjTxqxC"},
+          {"type": "BOOLEAN", "key": "enableConversionLinker", "value": "true"}
+        ],
+        "firingTriggerId": ["2"]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237555513",
+        "tagId": "15",
+        "name": "Conversion Linker",
+        "type": "gclidw",
+        "parameter": [
+          {"type": "BOOLEAN", "key": "enableCrossDomain", "value": "false"},
+          {"type": "BOOLEAN", "key": "enableUrlPassthrough", "value": "false"}
+        ],
+        "firingTriggerId": ["1"]
+      }
+    ],
+    "builtInVariable": [
+      {"accountId": "6328225355", "containerId": "237555513", "type": "PAGE_URL", "name": "Page URL"},
+      {"accountId": "6328225355", "containerId": "237555513", "type": "PAGE_HOSTNAME", "name": "Page Hostname"},
+      {"accountId": "6328225355", "containerId": "237555513", "type": "PAGE_PATH", "name": "Page Path"},
+      {"accountId": "6328225355", "containerId": "237555513", "type": "REFERRER", "name": "Referrer"},
+      {"accountId": "6328225355", "containerId": "237555513", "type": "EVENT", "name": "Event"},
+      {"accountId": "6328225355", "containerId": "237555513", "type": "SCROLL_DEPTH_THRESHOLD", "name": "Scroll Depth Threshold"},
+      {"accountId": "6328225355", "containerId": "237555513", "type": "SCROLL_DEPTH_UNITS", "name": "Scroll Depth Units"},
+      {"accountId": "6328225355", "containerId": "237555513", "type": "SCROLL_DIRECTION", "name": "Scroll Direction"},
+      {"accountId": "6328225355", "containerId": "237555513", "type": "VIDEO_PROVIDER", "name": "Video Provider"},
+      {"accountId": "6328225355", "containerId": "237555513", "type": "VIDEO_STATUS", "name": "Video Status"},
+      {"accountId": "6328225355", "containerId": "237555513", "type": "VIDEO_TITLE", "name": "Video Title"},
+      {"accountId": "6328225355", "containerId": "237555513", "type": "VIDEO_PERCENT", "name": "Video Percent"}
+    ]
+  }
+}
