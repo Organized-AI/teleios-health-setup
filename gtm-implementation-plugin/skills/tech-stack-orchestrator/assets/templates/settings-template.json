@@ -1,0 +1,77 @@
+{
+  "_comment": "Settings Template for Claude Code",
+  "_docs": "Place in .claude/settings.json or .claude/settings/[name].json",
+  
+  "model": {
+    "default": "sonnet",
+    "options": ["opus", "sonnet", "haiku"],
+    "description": "Default model for this project"
+  },
+  
+  "permissions": {
+    "allowedDirectories": [
+      ".",
+      "../shared-config"
+    ],
+    "deniedDirectories": [
+      "../other-projects"
+    ],
+    "allowedCommands": [
+      "npm *",
+      "git *",
+      "node *"
+    ]
+  },
+  
+  "context": {
+    "autoLoad": [
+      "CLAUDE.md",
+      "PLANNING/current-phase.md"
+    ],
+    "maxTokens": 100000,
+    "compactionThreshold": 0.7
+  },
+  
+  "behavior": {
+    "autoApprove": {
+      "read": true,
+      "write": false,
+      "execute": false
+    },
+    "confirmDestructive": true,
+    "verboseOutput": false
+  },
+  
+  "integrations": {
+    "git": {
+      "autoStage": false,
+      "conventionalCommits": true,
+      "signCommits": false
+    },
+    "mcpServers": {
+      "autoApprove": ["context7", "memory"],
+      "timeout": 30000
+    }
+  },
+  
+  "formatting": {
+    "markdown": {
+      "codeBlockLanguage": "typescript",
+      "tableFormat": "github"
+    },
+    "code": {
+      "indentSize": 2,
+      "useTabs": false,
+      "semicolons": true
+    }
+  },
+  
+  "custom": {
+    "projectType": "gtm-implementation",
+    "accounts": {
+      "metaPixel": "",
+      "ga4": "",
+      "googleAds": ""
+    }
+  }
+}
