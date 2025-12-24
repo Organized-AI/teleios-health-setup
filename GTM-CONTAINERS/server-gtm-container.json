@@ -1,0 +1,565 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2024-12-24T00:00:00.000Z",
+  "containerVersion": {
+    "path": "accounts/6328225355/containers/237556533/versions/0",
+    "accountId": "6328225355",
+    "containerId": "237556533",
+    "name": "Teleios Health sGTM v1",
+    "description": "Server-side container with CAPIG for Meta CAPI and GA4 Measurement Protocol",
+    "container": {
+      "path": "accounts/6328225355/containers/237556533",
+      "accountId": "6328225355",
+      "containerId": "237556533",
+      "name": "Teleios Health - Server",
+      "publicId": "GTM-MLBJCV38",
+      "usageContext": ["SERVER"]
+    },
+    "variable": [
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "1",
+        "name": "Constant - Meta Pixel ID",
+        "type": "c",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "912613798381607"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "2",
+        "name": "Constant - Meta CAPI Token",
+        "type": "c",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "YOUR_META_CAPI_ACCESS_TOKEN_HERE"
+          }
+        ],
+        "notes": "Replace with actual Meta CAPI access token from Events Manager"
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "3",
+        "name": "Constant - GA4 Measurement ID",
+        "type": "c",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "G-CS05KZX2HG"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "4",
+        "name": "Constant - GA4 API Secret",
+        "type": "c",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "YOUR_GA4_API_SECRET_HERE"
+          }
+        ],
+        "notes": "Replace with GA4 Measurement Protocol API secret"
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "5",
+        "name": "Client User Agent",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "user_agent"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "6",
+        "name": "Client IP Address",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "ip_override"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "7",
+        "name": "Event Data - event_id",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "event_id"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "8",
+        "name": "Event Data - event_name",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "event_name"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "9",
+        "name": "Event Data - user_data.email",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "user_data.email"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "10",
+        "name": "Event Data - user_data.phone",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "user_data.phone"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "11",
+        "name": "Event Data - user_data.first_name",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "user_data.first_name"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "12",
+        "name": "Event Data - user_data.last_name",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "user_data.last_name"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "13",
+        "name": "Cookie - _fbp",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "x-fb-browser_id"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "14",
+        "name": "Cookie - _fbc",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "x-fb-click_id"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "15",
+        "name": "Event Data - page_location",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "page_location"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "16",
+        "name": "Event Data - client_id",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "client_id"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "17",
+        "name": "Webhook - email",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "email"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "18",
+        "name": "Webhook - phone",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "phone"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "19",
+        "name": "Webhook - first_name",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "first_name"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "20",
+        "name": "Webhook - last_name",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "last_name"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "21",
+        "name": "Webhook - contact_id",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "contact_id"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "22",
+        "name": "Webhook - timestamp",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "timestamp"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "23",
+        "name": "Webhook - deposit_amount",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "deposit_amount"
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "variableId": "24",
+        "name": "Webhook - treatment_value",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "treatment_value"
+          }
+        ]
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "triggerId": "1",
+        "name": "GA4 - All Events",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Client Name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "GA4.*"}
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "triggerId": "2",
+        "name": "GA4 - Page View",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Client Name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "GA4.*"}
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Event Data - event_name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "page_view"}
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "triggerId": "3",
+        "name": "GA4 - Form Submit",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Client Name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "GA4.*"}
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Event Data - event_name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "generate_lead"}
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "triggerId": "4",
+        "name": "GA4 - Therapy Pages",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Client Name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "GA4.*"}
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Event Data - event_name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "view_item"}
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "triggerId": "5",
+        "name": "Webhook - Lead Qualified",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Client Name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "Webhook.*"}
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Event Data - event_name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "lead_qualified"}
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "triggerId": "6",
+        "name": "Webhook - Assessment Complete",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Client Name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "Webhook.*"}
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Event Data - event_name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "assessment_complete"}
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "triggerId": "7",
+        "name": "Webhook - Deposit Paid",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Client Name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "Webhook.*"}
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Event Data - event_name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "deposit_paid"}
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "triggerId": "8",
+        "name": "Webhook - Treatment Complete",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Client Name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "Webhook.*"}
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Event Data - event_name}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "treatment_complete"}
+            ]
+          }
+        ]
+      }
+    ],
+    "tag": [],
+    "client": [
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "clientId": "1",
+        "name": "GA4",
+        "type": "gaaw_client",
+        "parameter": [
+          {"type": "BOOLEAN", "key": "activateContainer", "value": "true"}
+        ],
+        "notes": "Receives GA4 events from web container"
+      },
+      {
+        "accountId": "6328225355",
+        "containerId": "237556533",
+        "clientId": "2",
+        "name": "Webhook - GoHighLevel",
+        "type": "webhook_client",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "requestPath", "value": "/webhook"},
+          {"type": "TEMPLATE", "key": "requestMethod", "value": "POST"}
+        ],
+        "notes": "Receives webhook events from GoHighLevel CRM"
+      }
+    ],
+    "notes": "IMPORTANT: This container requires the Stape CAPIG tag template to be installed from the Community Template Gallery. After importing, create CAPIG tags manually using the configurations in PHASE-2-COMPLETE.md and PHASE-3-COMPLETE.md"
+  }
+}
