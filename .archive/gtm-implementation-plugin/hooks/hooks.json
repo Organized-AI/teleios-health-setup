@@ -1,0 +1,17 @@
+{
+  "description": "GTM implementation validation hooks",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/validate-gtm-json.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

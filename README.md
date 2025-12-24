@@ -2,33 +2,54 @@
 
 A comprehensive Google Tag Manager implementation for Teleios Health, featuring Meta CAPI, GA4, Google Ads conversion tracking, and CRM webhook integration.
 
-## Repository Structure
+## Repository Structure (Organized Codebase)
 
 ```
 teleios-health-setup/
-├── docs/                              # Project knowledge & guides
-│   ├── teleios-health-customer-journey.md     # Customer journey & event mapping
-│   ├── teleios-final-implementation-guide.md  # Complete setup instructions
-│   ├── teleios-capig-implementation-guide.md  # Stape CAPIG configuration
-│   ├── teleios-testing-checklist.md           # 6-phase QA checklist
-│   └── gtm-plugin-guide.jsx                   # Interactive plugin documentation
-│
-├── gtm-implementation-plugin/         # Claude Code plugin
-│   ├── agents/                        # Specialized AI agents
-│   │   ├── gtm-architect.md          # Design & planning agent
-│   │   └── gtm-debugger.md           # Troubleshooting agent
-│   ├── commands/                      # Plugin commands
-│   │   ├── gtm-setup.md              # Initialize tracking architecture
-│   │   ├── gtm-test.md               # Run testing checklist
-│   │   ├── gtm-capi.md               # Configure Meta CAPI
-│   │   ├── gtm-webhook.md            # CRM webhook setup
-│   │   └── gtm-audit.md              # Audit existing implementation
-│   └── skills/                        # Implementation patterns
+├── .claude/                              # Claude Code configuration
+│   ├── agents/                           # Specialized AI agents
+│   │   ├── gtm-architect.md             # Design & planning agent
+│   │   └── gtm-debugger.md              # Troubleshooting agent
+│   ├── commands/                         # Plugin commands
+│   │   ├── gtm-setup.md                 # Initialize tracking architecture
+│   │   ├── gtm-test.md                  # Run testing checklist
+│   │   ├── gtm-capi.md                  # Configure Meta CAPI
+│   │   ├── gtm-webhook.md               # CRM webhook setup
+│   │   └── gtm-audit.md                 # Audit existing implementation
+│   ├── hooks/                            # Pre/post tool hooks
+│   └── skills/                           # Implementation patterns
+│       ├── data-audit/
 │       ├── event-tracking-patterns/
+│       ├── gtm-container-management/
 │       ├── meta-capi-setup/
-│       └── gtm-container-management/
+│       ├── organized-codebase-applicator/
+│       ├── phase-0-template/
+│       ├── phased-planning/
+│       └── tech-stack-orchestrator/
 │
-├── PHASED-IMPLEMENTATION-PLAN.md      # Remaining work breakdown
+├── PLANNING/                             # Implementation phases
+│   ├── PHASED-IMPLEMENTATION-PLAN.md    # Master implementation roadmap
+│   ├── PHASE-1-WEB-GTM.md               # Web GTM deployment
+│   ├── PHASE-2-SGTM-CAPIG.md            # Server-side GTM + CAPI
+│   ├── PHASE-3-WEBHOOKS.md              # CRM webhook integrations
+│   └── PHASE-4-ENHANCED-TRACKING.md     # Enhanced tracking features
+│
+├── DOCUMENTATION/                        # Technical documentation
+│   ├── teleios-health-customer-journey.md
+│   ├── teleios-final-implementation-guide.md
+│   ├── teleios-capig-implementation-guide.md
+│   ├── teleios-testing-checklist.md
+│   └── gtm-plugin-guide.jsx
+│
+├── ARCHITECTURE/                         # System architecture docs
+├── SPECIFICATIONS/                       # Functional/technical specs
+├── AGENT-HANDOFF/                        # Agent handoff instructions
+│   └── HANDOFF.md
+├── CONFIG/                               # Configuration docs
+├── scripts/                              # Automation scripts
+├── .archive/                             # Archived iterations
+│
+├── CLAUDE.md                            # Quick start for Claude
 └── README.md
 ```
 
@@ -37,10 +58,6 @@ teleios-health-setup/
 ### Using Claude Code Plugin
 
 ```bash
-# Install the plugin
-/plugin marketplace add organized-ai/teleios-health-setup
-/plugin install gtm-implementation@organized-ai
-
 # Available commands
 /gtm-setup    # Initialize new tracking
 /gtm-test     # Run validation checklist
@@ -86,11 +103,12 @@ Website (Webflow) → Web GTM → Server GTM (Stape)
 
 ## Documentation
 
-- [Customer Journey Map](./docs/teleios-health-customer-journey.md)
-- [Implementation Guide](./docs/teleios-final-implementation-guide.md)
-- [CAPIG Setup Guide](./docs/teleios-capig-implementation-guide.md)
-- [Testing Checklist](./docs/teleios-testing-checklist.md)
-- [Phased Plan](./PHASED-IMPLEMENTATION-PLAN.md)
+- [Customer Journey Map](./DOCUMENTATION/teleios-health-customer-journey.md)
+- [Implementation Guide](./DOCUMENTATION/teleios-final-implementation-guide.md)
+- [CAPIG Setup Guide](./DOCUMENTATION/teleios-capig-implementation-guide.md)
+- [Testing Checklist](./DOCUMENTATION/teleios-testing-checklist.md)
+- [Master Plan](./PLANNING/PHASED-IMPLEMENTATION-PLAN.md)
+- [Agent Handoff](./AGENT-HANDOFF/HANDOFF.md)
 
 ## License
 
