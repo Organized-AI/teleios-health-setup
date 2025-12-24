@@ -1,0 +1,15 @@
+{
+  "name": "teleios-health-setup",
+  "owner": {
+    "name": "Organized AI",
+    "url": "https://github.com/organized-ai"
+  },
+  "description": "Google Tag Manager implementation plugins for Meta CAPI, GA4, and CRM integrations - Teleios Health project",
+  "plugins": [
+    {
+      "name": "gtm-implementation",
+      "source": "./gtm-implementation-plugin",
+      "description": "Comprehensive GTM implementation toolkit with commands for setup, testing, CAPI configuration, and offline conversions"
+    }
+  ]
+}
