@@ -18,6 +18,10 @@ Claude Code plugin for implementing enterprise-grade Google Tag Manager tracking
 - **Web GTM**: GTM-WM5S3WSG
 - **Server GTM**: GTM-MLBJCV38
 
+### GTM Container URLs
+- **Web GTM**: https://tagmanager.google.com/#/container/accounts/6328225355/containers/237555513/workspaces/3
+- **Server GTM**: https://tagmanager.google.com/#/container/accounts/6328225355/containers/237556533/workspaces/3
+
 ### Current State
 - Plugin Framework: ✅ Complete
 - Agents: ✅ 2 agents (gtm-architect, gtm-debugger)

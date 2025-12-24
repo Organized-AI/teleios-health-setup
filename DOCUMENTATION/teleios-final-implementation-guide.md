@@ -22,6 +22,13 @@ All container JSON files have been updated with actual credentials.
 | Server GTM | `GTM-MLBJCV38` | ✅ |
 | CAPIG Endpoint | `https://capig.stape.vip` | ✅ |
 
+### GTM Container URLs
+
+| Container | URL |
+|-----------|-----|
+| Web GTM (GTM-WM5S3WSG) | https://tagmanager.google.com/#/container/accounts/6328225355/containers/237555513/workspaces/3 |
+| Server GTM (GTM-MLBJCV38) | https://tagmanager.google.com/#/container/accounts/6328225355/containers/237556533/workspaces/3 |
+
 ---
 
 ## Files Ready for Import
