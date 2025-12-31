@@ -1,0 +1,73 @@
+# ============================================
+# Teleios Health GTM - .gitignore
+# ============================================
+
+# Environment Variables (CRITICAL - Contains API keys)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+*.env
+
+# Keep .env.example for reference
+!.env.example
+
+# Claude Code / AI Assistant
+.claude/
+.claude-plugin/settings.json
+
+# OS Generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Node.js (if any scripts)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Archive / Backup
+.archive/
+*.bak
+*.backup
+
+# Credentials & Secrets
+*credentials*.json
+*secret*.json
+*token*.json
+*.pem
+*.key
+service-account*.json
+
+# GTM Container Exports (may contain tokens)
+# Uncomment if you want to exclude these
+# GTM-CONTAINERS/*.json
+
+# Test Data
+test-data/
+*.test.json
