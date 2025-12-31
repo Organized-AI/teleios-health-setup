@@ -1,0 +1,19 @@
+{
+  "name": "teleios-health-setup",
+  "version": "1.0.0",
+  "description": "A comprehensive Google Tag Manager implementation for Teleios Health, featuring Meta CAPI, GA4, Google Ads conversion tracking, and CRM webhook integration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:17619/git/Organized-AI/teleios-health-setup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "googleapis": "^169.0.0"
+  }
+}

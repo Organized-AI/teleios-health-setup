@@ -4,16 +4,17 @@
  *
  * Deploys GTM containers using the Google Tag Manager API v2
  *
- * Prerequisites:
- * 1. npm install googleapis
- * 2. Service account JSON key with Tag Manager permissions
- * 3. Set GOOGLE_APPLICATION_CREDENTIALS environment variable
+ * Authentication Options:
+ * 1. Service account JSON file at GTM-CONTAINERS/service-account.json
+ * 2. Environment variable GOOGLE_APPLICATION_CREDENTIALS
+ * 3. Application Default Credentials (gcloud auth)
  *
  * Usage:
- *   node deploy-gtm.js web     # Deploy web container
- *   node deploy-gtm.js server  # Deploy server container
- *   node deploy-gtm.js all     # Deploy both
- *   node deploy-gtm.js list    # List containers
+ *   node deploy-gtm.js setup    # Interactive setup guide
+ *   node deploy-gtm.js web      # Deploy web container
+ *   node deploy-gtm.js server   # Deploy server container
+ *   node deploy-gtm.js all      # Deploy both
+ *   node deploy-gtm.js list     # List containers
  */
 
 const fs = require('fs');
@@ -27,6 +28,14 @@ const CONFIG = {
   webContainerPublicId: 'GTM-WM5S3WSG',
   serverContainerPublicId: 'GTM-MLBJCV38'
 };
+
+// Credentials file paths to check
+const CREDENTIALS_PATHS = [
+  path.join(__dirname, 'service-account.json'),
+  path.join(__dirname, '..', 'service-account.json'),
+  path.join(__dirname, 'credentials.json'),
+  process.env.GOOGLE_APPLICATION_CREDENTIALS
+].filter(Boolean);
 
 // Try to load googleapis
 let google;
@@ -43,14 +52,119 @@ try {
   process.exit(0);
 }
 
+// Find credentials file
+function findCredentialsFile() {
+  for (const credPath of CREDENTIALS_PATHS) {
+    if (credPath && fs.existsSync(credPath)) {
+      return credPath;
+    }
+  }
+  return null;
+}
+
 // Initialize Tag Manager API
 async function getTagManagerClient() {
-  const auth = new google.auth.GoogleAuth({
-    scopes: ['https://www.googleapis.com/auth/tagmanager.edit.containers']
-  });
+  const credentialsFile = findCredentialsFile();
+
+  let auth;
+  if (credentialsFile) {
+    console.log(`🔑 Using credentials: ${path.basename(credentialsFile)}`);
+    auth = new google.auth.GoogleAuth({
+      keyFile: credentialsFile,
+      scopes: ['https://www.googleapis.com/auth/tagmanager.edit.containers']
+    });
+  } else {
+    console.log('🔑 Using Application Default Credentials');
+    auth = new google.auth.GoogleAuth({
+      scopes: ['https://www.googleapis.com/auth/tagmanager.edit.containers']
+    });
+  }
 
   const authClient = await auth.getClient();
   return google.tagmanager({ version: 'v2', auth: authClient });
+}
+
+// Interactive setup guide
+function showSetupGuide() {
+  console.log(`
+╔═══════════════════════════════════════════════════════════════════╗
+║           GTM API Deployment - Setup Guide                        ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+To use programmatic GTM deployment, you need a Google Cloud service account
+with Tag Manager API permissions.
+
+Step 1: Create a Google Cloud Project (if needed)
+─────────────────────────────────────────────────
+1. Go to: https://console.cloud.google.com/
+2. Create a new project or select existing
+3. Note your project ID
+
+Step 2: Enable Tag Manager API
+─────────────────────────────
+1. Go to: https://console.cloud.google.com/apis/library
+2. Search for "Tag Manager API"
+3. Click "Enable"
+
+Step 3: Create Service Account
+─────────────────────────────
+1. Go to: https://console.cloud.google.com/iam-admin/serviceaccounts
+2. Click "Create Service Account"
+3. Name: "gtm-deployer"
+4. Description: "GTM container deployment"
+5. Click "Create and Continue"
+6. Skip optional steps, click "Done"
+
+Step 4: Create Service Account Key
+──────────────────────────────────
+1. Click on the service account you just created
+2. Go to "Keys" tab
+3. Click "Add Key" → "Create new key"
+4. Select "JSON" format
+5. Click "Create" - this downloads the key file
+
+Step 5: Add Service Account to GTM
+──────────────────────────────────
+1. Go to: https://tagmanager.google.com/
+2. Click "Admin" in the navigation
+3. Select Account: ${CONFIG.accountId}
+4. Click "User Management"
+5. Click "+" to add user
+6. Enter the service account email (from step 3)
+7. Set permission to "Publish" (or "Edit" minimum)
+8. Click "Invite"
+
+Step 6: Configure This Script
+─────────────────────────────
+Option A - Place credentials file:
+   mv ~/Downloads/your-key-file.json ${__dirname}/service-account.json
+
+Option B - Set environment variable:
+   export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your-key-file.json"
+
+Step 7: Test the Connection
+───────────────────────────
+   node deploy-gtm.js list
+
+If successful, you'll see your GTM containers listed!
+
+─────────────────────────────────────────────────────────────────────
+Current Status:
+`);
+
+  const credFile = findCredentialsFile();
+  if (credFile) {
+    console.log(`  ✅ Credentials found: ${credFile}`);
+  } else {
+    console.log('  ❌ No credentials file found');
+    console.log(`     Expected at: ${CREDENTIALS_PATHS[0]}`);
+  }
+
+  console.log(`
+─────────────────────────────────────────────────────────────────────
+Need help? Check the Google Cloud documentation:
+https://cloud.google.com/docs/authentication/getting-started
+`);
 }
 
 // List all containers in the account
@@ -274,19 +388,23 @@ GTM Container Deployment Script
 Usage: node deploy-gtm.js [command]
 
 Commands:
+  setup     Interactive setup guide for credentials
   web       Deploy web container (${CONFIG.webContainerPublicId})
   server    Deploy server container (${CONFIG.serverContainerPublicId})
   all       Deploy both containers
   list      List containers in account
   help      Show this help message
 
-Prerequisites:
-  - npm install googleapis
-  - GOOGLE_APPLICATION_CREDENTIALS set to service account JSON
-  - Service account has Tag Manager Edit permissions
+Authentication (in order of preference):
+  1. GTM-CONTAINERS/service-account.json
+  2. GOOGLE_APPLICATION_CREDENTIALS environment variable
+  3. Application Default Credentials (gcloud auth)
 
-Environment:
-  GOOGLE_APPLICATION_CREDENTIALS - Path to service account key file
+Quick Start:
+  1. Run: node deploy-gtm.js setup
+  2. Follow the steps to create service account
+  3. Place credentials at: GTM-CONTAINERS/service-account.json
+  4. Run: node deploy-gtm.js list
   `);
 }
 
@@ -295,6 +413,9 @@ async function main() {
   const command = process.argv[2] || 'help';
 
   switch (command) {
+    case 'setup':
+      showSetupGuide();
+      break;
     case 'web':
       await deployWeb();
       break;
