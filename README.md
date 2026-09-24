@@ -120,3 +120,7 @@ Website (Webflow) → Web GTM → Server GTM (Stape)
 ## License
 
 Private - Organized AI
+
+---
+
+Maintained by Jordaaan Hill ([LinkedIn](https://www.linkedin.com/in/jordaaanhill)).
